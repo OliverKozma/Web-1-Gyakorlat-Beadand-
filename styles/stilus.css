@@ -1,70 +1,120 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
 header {
     border-radius: 10px;
-    background-color: yellow;
-    padding: 10px;
+    background-color: yellow; 
+    padding: 15px;
     margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header img {
-    float: left;
-    margin: 20px 10px 0px 10px;
-}
-
-div#wrapper {
+    height: 80px; 
     margin: 10px;
 }
 
-aside {
-    display: table-cell;
-    vertical-align: top;
+header h1 {
+    flex-grow: 1;
+    margin-left: 20px;
 }
 
+
+.user-info {
+    background: rgba(255,255,255,0.5);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+
+div#wrapper {
+    display: flex;
+    flex-direction: column; 
+    margin: 10px;
+    gap: 10px;
+}
+
+/* Vízszintes menü */
 nav {
-    margin: 0px 10px 0px 0px;
-    top: 0px;
+    background-color: #FF6600; 
     border-radius: 10px;
-    background-color: #FF6600;
+    width: 100%;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0px;
-    padding: 15px 0px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 
 nav ul li {
-    padding: 0px 15px;;
-}
-
-nav ul li.active {
-    border-right: 5px solid blue;
+    padding: 15px 20px;
 }
 
 nav ul a {
     text-decoration: none;
-    color: blue;
+    color: blue; 
+    font-weight: bold;
 }
+
+nav ul li.active {
+    background-color: rgba(0,0,255,0.1);
+    border-bottom: 4px solid blue; 
+}
+
 
 div#content {
-    display: table-cell;
     width: 100%;
     border-radius: 10px;
-    background-color: #99FFCC;
-    padding: 15px;
+    background-color: #99FFCC; 
+    padding: 20px;
+    min-height: 400px;
 }
 
-div#content img{
-    float: right;
-    width: 20em;
+
+div#content img {
+    max-width: 100%;
     height: auto;
-    margin: 0 0 15px 15px;
-    padding: 3px;
     border: 3px solid blue;
+    padding: 3px;
+    margin: 10px;
 }
+
 
 footer {
     border-radius: 10px;
     margin: 10px;
-    padding: 5px 20px;
-    background-color: #CC99FF;
+    padding: 15px;
+    background-color: #CC99FF; 
+    text-align: center;
+}
+
+
+.btn-add { background-color: #007bff; color: white; border: none; padding: 8px 12px; border-radius: 5px; text-decoration: none; }
+.btn-edit { background-color: #007bff; color: white; border: none; padding: 5px 10px; border-radius: 4px; text-decoration: none; }
+.btn-delete { background-color: #dc3545; color: white; border: none; padding: 5px 10px; border-radius: 4px; text-decoration: none; }
+
+
+@media (min-width: 768px) {
+    
+    nav ul {
+        justify-content: flex-start; 
+    }
 }

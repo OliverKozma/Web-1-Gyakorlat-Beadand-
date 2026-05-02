@@ -19,6 +19,7 @@ if(isset($_POST['felhasznalo']) && isset($_POST['jelszo'])) {
         $errormessage = "Hiba: ".$e->getMessage();
     }      
 }
+
 else {
     header("Location: .");
 }

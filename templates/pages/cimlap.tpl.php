@@ -1,7 +1,8 @@
 <div class="cimlap-container">
     <section class="main-intro">
         <h2>Üdvözöljük a weboldalunkon!</h2>
-        <p>Ez a weboldal a Web-programozás 1 kurzus keretein belül készült projektmunka. A választott témánk bemutatása során törekedtünk a látványos és modern megjelenésre.</p>
+        <p>Ez a weboldal a Web-programozás 1 kurzus keretein belül készült projektmunka. A választott adatbázis felhasználása és a weboldal elkészítéle során törekedtünk a látványos és modern megjelenésre.</p>
+        <p>Seholország fővárosában működik a ReNew Kft., ahol csak gyárilag felújított notebookokat árulnak igen kedvező áron.</p>
     </section>
 
     <section class="video-section">
@@ -9,17 +10,17 @@
         <div class="video-grid">
             <!-- Saját videó (max 5 mp) -->
             <div class="video-item">
-                <h4>Saját rövid bemutató:</h4>
+                <h4>Rövid videó</h4>
                 <video controls>
-                    <source src="./videos/bemutato.mp4" type="video/mp4">
+                    <source src="./videos/video.mp4" type="video/mp4">
                     A böngészője nem támogatja a videót.
                 </video>
             </div>
 
             <!-- YouTube videó -->
             <div class="video-item">
-                <h4>Külső forrásból származó videó:</h4>
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                <h4>Hogyan válassz laptopot?</h4>
+                <iframe src="https://www.youtube.com/embed/g8v4rC7vBjg" allowfullscreen></iframe>
             </div>
         </div>
     </section>

@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	include('./includes/config.inc.php');
 
 	$oldal = isset($_GET['oldal']) ? $_GET['oldal'] : $_SERVER['QUERY_STRING'];

@@ -7,7 +7,7 @@
                     <th>Küldő</th>
                     <th>E-mail</th>
                     <th>Tárgy</th>
-                    <th style="width: 40%;">Üzenet</th> <!-- Új oszlop -->
+                    <th style="width: 40%;">Üzenet</th> 
                     <th>Időpont</th>
                 </tr>
             </thead>

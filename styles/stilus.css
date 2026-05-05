@@ -273,3 +273,55 @@ footer {
         overflow-x: auto;
     }
 }
+
+.galeria-container {
+    color: var(--accent-green);
+}
+
+.upload-section {
+    background: #111;
+    padding: 20px;
+    border: 1px solid var(--accent-green);
+    margin-bottom: 30px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.image-item {
+    background: #000;
+    border: 1px solid #333;
+    padding: 10px;
+    transition: border-color 0.3s;
+}
+
+.image-item:hover {
+    border-color: var(--accent-green);
+}
+
+.image-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #000; /* Vékony fekete keret */
+}
+
+.image-item p {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 10px;
+}
+
+.image-item span {
+    color: var(--accent-green);
+    font-size: 0.7rem;
+}
+
+.status {
+    color: var(--accent-green);
+    font-weight: bold;
+    margin-top: 10px;
+}

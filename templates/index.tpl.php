@@ -48,5 +48,6 @@
 		&nbsp;
         <?php if(isset($lablec['ceg'])) { ?><?= $lablec['ceg']; ?><?php } ?>
     </footer>
+    <script src="./js/ellenorzes.js"></script>
 </body>
 </html>

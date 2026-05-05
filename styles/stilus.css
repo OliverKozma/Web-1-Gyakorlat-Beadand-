@@ -325,3 +325,41 @@ footer {
     font-weight: bold;
     margin-top: 10px;
 }
+
+.kapcsolat-container, .uzenetek-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    color: var(--accent-green);
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    background: #000;
+    border: 1px solid var(--accent-green);
+    color: #fff;
+    padding: 10px;
+}
+
+.kapcsolat-container h2 {
+    border-bottom: 1px solid var(--accent-green);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.message-text {
+    max-width: 300px; /* Vagy amennyit jónak látsz */
+    font-size: 0.85rem;
+    color: #ccc;
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: justify;
+}

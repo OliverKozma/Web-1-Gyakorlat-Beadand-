@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (empty($hibak)) {
         try {
-            $dbh = new PDO('mysql:host=localhost;dbname=gyakorlat7', 'root', '',
+            $dbh = new PDO('mysql:host=localhost;dbname=hvz9u1', 'hvz9u1', 'Beadando1',
                             array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
             $stmt = $dbh->prepare("INSERT INTO uzenetek (nev, email, targy, uzenet, felhasznalo_id) VALUES (?, ?, ?, ?, ?)");
             $stmt->execute([$nev, $email, $targy, $uzenet_text, $bejelentkezett_user]);

@@ -22,7 +22,7 @@
     <div class="image-grid">
         <?php
         try {
-            $dbh = new PDO('mysql:host=localhost;dbname=gyakorlat7', 'root', '');
+            $dbh = new PDO('mysql:host=localhost;dbname=hvz9u1', 'hvz9u1', 'Beadando1');
             $stmt = $dbh->query("SELECT * FROM kepek ORDER BY datum DESC");
             while($kep = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 echo '<div class="image-item">';

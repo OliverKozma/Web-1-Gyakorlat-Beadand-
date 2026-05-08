@@ -14,7 +14,7 @@
             <tbody>
                 <?php
                 try {
-                    $dbh = new PDO('mysql:host=localhost;dbname=gyakorlat7', 'root', '');
+                    $dbh = new PDO('mysql:host=localhost;dbname=hvz9u1', 'hvz9u1', 'Beadando1');
                     // Fordított időrend az elvárás szerint
                     $stmt = $dbh->query("SELECT * FROM uzenetek ORDER BY idopont DESC");
                     while($sor = $stmt->fetch(PDO::FETCH_ASSOC)) {

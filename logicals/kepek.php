@@ -18,7 +18,7 @@ if (isset($_SESSION['login']) && isset($_FILES['ujkep'])) {
     if (empty($uzenet)) {
         if (move_uploaded_file($_FILES['ujkep']['tmp_name'], $utvonal)) {
             try {
-                $dbh = new PDO('mysql:host=localhost;dbname=gyakorlat7', 'root', '',
+                $dbh = new PDO('mysql:host=localhost;dbname=hvz9u1', 'hvz9u1', 'Beadando1',
                                 array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
                 $stmt = $dbh->prepare("INSERT INTO kepek (fajlnev, felhasznalo) VALUES (:fajlnev, :felhasznalo)");
                 $stmt->execute(array(':fajlnev' => $fajlnev, ':felhasznalo' => $_SESSION['login']));

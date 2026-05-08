@@ -1,5 +1,5 @@
 <?php
-$dbh = new PDO('mysql:host=localhost;dbname=gyakorlat7', 'root', '', 
+$dbh = new PDO('mysql:host=localhost;dbname=hvz9u1', 'hvz9u1', 'Beadando1', 
                 array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 
 
